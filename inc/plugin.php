@@ -1,4 +1,5 @@
 <?php
+if(!defined('IN_SCRIPT')) die('Access denied');
 
 /** Adminer customization allowing usage of plugins
 * @link http://www.adminer.org/plugins/#use

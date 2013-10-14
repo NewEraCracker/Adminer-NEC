@@ -1,4 +1,5 @@
 <?php
+if(!defined('IN_SCRIPT')) die('Access denied');
 
 /** Dump to ZIP format
 * @link http://www.adminer.org/plugins/#use

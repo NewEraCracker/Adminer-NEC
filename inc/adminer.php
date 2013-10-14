@@ -1,4 +1,6 @@
 <?php
+if(!defined('IN_SCRIPT')) die('Access denied');
+
 /** Adminer - Compact database management
 * @link http://www.adminer.org/
 * @author Jakub Vrana, http://www.vrana.cz/

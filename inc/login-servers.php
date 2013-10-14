@@ -1,4 +1,5 @@
 <?php
+if(!defined('IN_SCRIPT')) die('Access denied');
 
 /** Display constant list of servers in login form
 * @link http://www.adminer.org/plugins/#use

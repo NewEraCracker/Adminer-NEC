@@ -1,4 +1,5 @@
 <?php
+if(!defined('IN_SCRIPT')) die('Access denied');
 
 /** Include current date and time in export filename
 * @link http://www.adminer.org/plugins/#use
