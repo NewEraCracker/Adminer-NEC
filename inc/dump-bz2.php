@@ -32,7 +32,7 @@ class AdminerDumpBz2 {
 
 	function dumpHeaders($identifier, $multi_table = false) {
 		if ($_POST["output"] == "bz2") {
-			$this->filename = tempnam("", "bz2");
+			$this->filename = tempnam(dirname(__FILE__)."/../tmp", "bz2");
 			$this->fp = bzopen($this->filename, 'w');
 			header("Content-Type: application/x-bzip");
 			ob_start(array($this, '_bz2'), 1e6);
