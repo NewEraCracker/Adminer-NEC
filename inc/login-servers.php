@@ -9,7 +9,7 @@
 class AdminerLoginServers {
 	/** @access protected */
 	var $servers, $driver;
-	
+
 	/** Set supported servers
 	* @param array array($domain) or array($domain => $description) or array($category => array())
 	* @param string
@@ -18,7 +18,7 @@ class AdminerLoginServers {
 		$this->servers = $servers;
 		$this->driver = $driver;
 	}
-	
+
 	function login($login, $password) {
 		// check if server is allowed
 		foreach ($this->servers as $key => $val) {
@@ -34,7 +34,7 @@ class AdminerLoginServers {
 		}
 		return false;
 	}
-	
+
 	function loginForm() {
 		?>
 <table cellspacing="0">
@@ -47,5 +47,5 @@ class AdminerLoginServers {
 		echo checkbox("auth[permanent]", 1, $_COOKIE["adminer_permanent"], lang('Permanent login')) . "\n";
 		return true;
 	}
-	
+
 }
