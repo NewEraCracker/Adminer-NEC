@@ -24,7 +24,7 @@ class AdminerDumpZip {
 		$this->data .= $string;
 		if ($state & PHP_OUTPUT_HANDLER_END) {
 			$zip = new ZipArchive;
-			$zipFile = tempnam(dirname(__FILE__)."/../tmp", "zip");
+			$zipFile = tempnam(ROOTDIR.'/tmp', "zip");
 			$zip->open($zipFile, ZipArchive::OVERWRITE); // php://output is not supported
 			$zip->addFromString($this->filename, $this->data);
 			$zip->close();

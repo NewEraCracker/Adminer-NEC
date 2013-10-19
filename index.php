@@ -1,5 +1,9 @@
 <?php
 define('IN_SCRIPT', true);
+define('ROOTDIR', dirname(__FILE__));
+
+session_save_path(ROOTDIR.'/tmp/sessions');
+ini_set('session.gc_probability', 1);
 
 function adminer_object() {
 	include_once './inc/plugin.php';
