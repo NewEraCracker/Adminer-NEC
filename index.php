@@ -5,6 +5,8 @@ define('ROOTDIR', dirname(__FILE__));
 session_save_path(ROOTDIR.'/tmp/sessions');
 ini_set('session.gc_probability', 1);
 
+set_include_path(ROOTDIR);
+
 function adminer_object() {
 	include_once './inc/plugin.php';
 	include_once './inc/dump-bz2.php';
