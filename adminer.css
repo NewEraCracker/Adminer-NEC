@@ -1,259 +1,290 @@
-* {
-	font: 13px/1.5 Verdana, 'Geneva CE', lucida, sans-serif;
-	color:#333333;
-	margin:0px;
-	padding:0px;
+/*
+Ok, it's a mess. You don't have to read it!
+*/
+
+body {
+	font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-a,a:visited {
-	color:#006aeb;
-	text-decoration:none;
-	padding:3px 1px;
+body a[href^="#"] {
+	color:#000; text-decoration: none; border-bottom: 1px dotted #999;
 }
 
-#content table thead span, #content table thead a {
-	font-weight:bold;
-	color:black;
+h3 {
+	margin-top: 2em;
 }
 
-#content table thead a:hover {
-	background:none;
-	text-decoration:underline;
-	color:black;
+.jush-bac {
+	color:#22c !important;
 }
 
 a:hover {
-	color:white;
-	background:#006aeb;
+	color:#000; text-decoration: none;
 }
 
-h1 {
-	font-size:1.9em;
-	font-weight:normal;
-	background:white;
-	color:#1e5eb6;
-	border-bottom:1px solid #f4f4f4;
+/*
+	@group Headers (visually)
+*/
 
-	padding:20px;
-	margin:0px;
+#menu .logout {
+	border-bottom:0; height:auto; padding: 0;
 }
 
-#menu h1 {
-	padding:0px 0px 5px 20px;
-	background:none;
-}
 
-h2,h3 {
-	font-size:1.5em;
-	font-weight:normal;
-	background:white;
-	color:#1e5eb6;
-	border-bottom:1px solid #f4f4f4;
+/*
+	@end
+*/
 
-	padding:20px 0px;
-	margin:0px;
-}
-
-fieldset {
-	padding:5px;
-	border:1px solid #f4f4f4;
-}
-
-input,select,textarea {
-	border:1px solid #e5e5e5;
-	margin:1px;
-	padding:3px;
-}
-
-input[type=submit] {
-	color:white;
-	background:#3390e6;
-	padding:3px 10px;
-	cursor:pointer;
-	border:0px solid;
-}
-
-input[type=submit]:hover{
-	background:blue;
-}
-
-input[type=checkbox]{
-	margin-right:5px;
-}
-
-input[type=image] {
-	border:1px solid #d0cdc4;
-}
-
-input[type=checkbox],input[type=radio]{
-	border:1px solid #e5e5e5;
-	padding:2px 5px;
-}
-
-code{
-	background:#f0ffe1;
-	border:1px dashed #d5f1b9;
-	padding:2px 4px;
-	font-family:"Courier New";
-}
-code a:hover{background:transparent}
-
-table{
-	margin:10px 0px;
-	border:1px solid #d0cdc4;
-	border-collapse:collapse;
-}
-
-tbody tr:hover td,tbody tr:hover th{
-	background:#edf4ff
-}
-
-thead th, thead td {
-	text-align:center;
-	vertical-align:middle;
-	font-weight:bold;
-	white-space:nowrap;
-	background:#f2eee1;
-	color:#808080;
-}
-
-th,td{
-	border:1px solid #d0cdc4;
-	padding:3px 6px;
-	vertical-align:top;
-}
-
-th a {
-	font-weight:bold;
-	padding-bottom:0px;
-}
-
-th {
-	background:white;
-}
-
-tr.odd td {
-	background:#fcfaf5;
-}
-
-#content tbody tr.checked td, tr.checked.odd td {
-	background:#fbe2e2;
-	color:red;
-}
-
-.hidden{
-	display:none
-}
-
-.error,.message{
-	padding:0px;
-	background:transparent;
-	font-weight:bold
-}
-
-.error{
-	color:#c00
-}
-
-.message{
-	color:#090
-}
-
-#content{
-	margin:0px 0px 0px 320px;
-	padding:50px 20px 40px 0px;
-	height:100%;
-}
-
-#lang {
-	background:#f2eee1;
-	color:#808080;
-	position:fixed;
-	top:0px;
-	left:0px;
-	width:100%;
-	padding:10px 20px;
-	z-index:1;
-}
-
-#breadcrumb {
-	position:fixed;
-	top:0px;
-	left:300px;
-	background:#f2eee1;
-	z-index:2;
-	width:100%;
-	padding:10px;
-}
+/*
+	@group Sidebar (visually)
+*/
 
 #menu {
-	background:#fcfaf5;
-	position:fixed;
-	top:-10px;
-	padding:20px;
-	padding-top:40px;
-	bottom:0px;
-	overflow:auto;
-	left:0px;
-	width:240px;
-	border-right:5px solid #f2eee1;
+	margin:0;  padding:0;
+	position:static; float:left; margin-left:-100%;
+	width:25%; padding-top:80px;
+	line-height:1.4;
 }
 
-#schema .table {
+	/* header "adminer 2.3.2" */
+	h1 {
+		margin:0; padding:0;
+		position: fixed; left:0; top:0;
+		width:25%; height:60px;
+		border-bottom: 1px solid #bbb;
+		background-color:#efefef; background-color:rgba(240,240,240,0.9);
+		line-height:60px; text-indent:20px;
+	}
+	
+	#h1 {
+		font-weight:bold; color:#666; font-style:normal;
+	}
+
+	#menu a {
+		padding:1px; margin-right:4px;
+		color:#000; font-size:small; text-decoration: none;
+	}
+	
+		#menu a:hover {
+			font-weight:bold;
+		}
+	
+	#menu #tables + p a {
+		color:green;
+	}
+
+
+
+	/*
+	#menu form+form, #menu #tables {
+		position: fixed; left:0; top:100px; width:25%;
+	}
+
+	#menu #tables {
+		max-height:100%; padding-top:130px; overflow-y:auto;
+	}
+	*/
+	/* @todo ev. position fixed for whole sidebar (not simple) */
+
+/*
+	@end
+*/
+
+/*
+	@group Sidebar (based on HTML position, not visual)
+*/
+
+
+
+/* languages */
+#lang { 
+	position: absolute; left:auto; left:120px; top:0px; z-index:3;
+	font-size:11px; line-height:60px; text-decoration: underline; text-transform:lowercase;
+	opacity:0.5;
+}
+
+#lang:hover {
+	opacity:1;
+}
+
+	#lang select {
+		display:none;
+	}
+	
+	#lang:hover select {
+		display: inline-block;
+	}
+
+/* logout */
+input[name="logout"] {
+	position:fixed; right:15px; top:22px;
+}
+
+/*
+	@end
+*/
+
+/*
+	@group Content: main
+*/
+
+
+#content {
+	margin:0; padding:155px 0 50px 0;
+	position: static; float:left; margin-left:25%;
+	width:75%;
+}
+
+#content > * {
+	margin-left:20px; margin-right:20px;
+}
+
+
+	#content h2 {
+		margin:0; padding:0;
+		position:fixed; left:25%; top:0; margin-left:-1px;
+		width:75%;
+		border-bottom: 1px solid #bbb;
+		background-color:#efefef; background-color:rgba(240,240,240,0.9);
+		font-weight:bold; line-height:60px; text-indent:20px;
+	}
+
+/* breadcrumbs */
+#breadcrumb {
+	margin:0; padding:0;
+	position:absolute; top:75px; left:25%; 
+	background:url() no-repeat;
+	text-indent: 20px; 
+}
+
+/* Dump link */
+#menu .logout a {
+	margin:0; padding:2px 4px;
+	position:absolute; left:25%; top:110px;
+	border-radius:3px;
+	background-color:#053AC0; color:#fff; margin-left:120px; text-transform: uppercase; font-size:11px; text-decoration: none;
+}
+
+/* SQL command link */
+body #menu .logout a[href$="sql="] {
+	margin-left: 20px;
+	background-color:green;
+}
+
+
+/*
+	@end
+*/
+
+/*
+	@group Content: details
+*/
+
+
+
+#content p > a {
+	margin-right:1ex; 
+	color: #333;
+}
+
+#content p > a[href$="&database="],
+#content p > a[href*="&edit="] {
+	color:green !important;
+	
+}
+
+/*
+	@group Messages
+*/
+
+.message {
+	background-color:#D0EE76;
+	color:#000;
+}
+
+.error {
+	background-color:#fbb;
+	color: #000;
+}
+
+	.message a,
+	.error a {
+		margin-left:1em;
+		color:#000; opacity:0.5; font-size:smaller;
+	}
+
+/*
+	@end
+*/
+
+
+
+#menu p {
+	padding:20px; /* wtf? */
+}
+
+#menu form + form p:before {
+	content:'DB:'; font-size:11px;
+}
+
+
+
+
+/*
+	@group Tables
+*/
+
+table {
+	border:1px solid #ccc;
+}
+
+table thead tr > * {
 	padding:5px;
-	background:#fcfaf5;
-	border:1px solid #d0cdc4;
+	border-color:#ccc; 
+	border-bottom:2px solid #ccc;
+	background-color:#f2f2f2;
+	text-align: left; font-weight:bold;
 }
 
-#schema .table b {
-	color:#006aeb;
-	font-weight:bold;
-	text-decoration:underline;
+thead a {
+	color:#333; text-decoration: none;
 }
 
-#schema .table b:hover {
-	color:white;
+body thead tr:hover > * {
+	background-color:#f2f2f2;
 }
 
-input[name=logout] {
-	color:#fce2e2;
-	background:#d73e3e;
+body tbody tr:hover > * {
+	background-color:#f2f7ff;
 }
 
-input[name=logout]:hover {
-	background:#ea0202;
+/*
+	@end
+*/
+
+/*
+	@group Pagination
+*/
+
+#content .pages {
+	margin:1em 0 2em;
 }
 
-#logins a, #tables a { 
-	background:none;
+#content .pages a {
+	padding:3px 5px; margin:0 1px;
+	border:1px solid #eee;
+	text-decoration:none; color: #000;
 }
 
-#logins a:hover, #tables a:hover { 
-	background:#006aeb;
+#content .pages a:hover {
+	background-color:#eee;
+	border-color: #fff;
 }
 
-#logout {
-	color:#006aeb;
-	text-decoration:none;
-}
 
-#logout:hover {
-	color:white;
-	background:#006aeb;
-}
-
-.js .column {
-	background:#f2eee1;
-}
-
-#content table thead a.text:hover {
-	text-decoration:none;
-}
-
-#version, .version {
-	font-size:50%;
-}
-
-#h1:hover {
-	color:white;
-}
+/*
+	@end
+*/
+/*
+	@end
+*/
