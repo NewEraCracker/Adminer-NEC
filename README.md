@@ -3,7 +3,6 @@ Modified copy of Adminer MySQL tool for database administration in localhost.
 It is provided as a light replacement of phpMyAdmin and is compatible with PHP 5.2 and higher.
 
 ## Usage
-
 1. Upload to web folder;
 2. ```chmod``` and/or ```chown``` **tmp** directory recursively so it can be written;
 3. Have fun and use this tool wisely.

@@ -28,4 +28,3 @@ function adminer_object() {
 }
 
 include './inc/adminer.php';
-?>
